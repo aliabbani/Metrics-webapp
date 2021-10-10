@@ -65,7 +65,7 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](/).
+Feel free to check the [issues page](https://github.com/aliabbani/Metrics-webapp/issues).
 
 ## Show your support
 
