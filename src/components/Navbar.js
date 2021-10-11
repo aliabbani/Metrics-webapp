@@ -31,10 +31,10 @@ const Navbar = () => {
         ))}
       </div>
       <div className="middle-nav">most views</div>
-      <ul className="right-nav">
-        <BsFillMicFill />
-        <BsFillGearFill />
-      </ul>
+      <div className="right-nav">
+        <BsFillMicFill className="mic" />
+        <BsFillGearFill className="gear" />
+      </div>
     </nav>
   );
 };
