@@ -1,0 +1,29 @@
+.navBar {
+  background-color: #ec4c8b;
+  display: flex;
+  color: #fdfafd;
+  align-items: baseline;
+  padding: 2vh 2vw;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.left-nav,
+.middle-nav,
+.right-nav {
+  margin: 0;
+}
+
+.left-nav-a {
+  text-decoration: none;
+  color: #fdfafd;
+}
+
+.right-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mic {
+  padding-right: 5vw;
+}

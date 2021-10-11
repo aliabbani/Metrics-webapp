@@ -65,7 +65,7 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](/).
+Feel free to check the [issues page](https://github.com/aliabbani/Metrics-webapp/issues).
 
 ## Show your support
 
@@ -79,3 +79,5 @@ Give a ⭐️ if you like this project!
 ## 📝 License
 
 This project is [Microverse](https://www.microverse.org/) licensed.
+
+Original design idea by Nelson Sakwa on [Behance](https://www.behance.net/gallery/31579789/Ballhead-App-%28Free-PSDs%29).
