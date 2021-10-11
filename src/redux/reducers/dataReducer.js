@@ -1,24 +1,23 @@
-const FETCH_SUCCESS_DATA = 'FETCH_SUCCESS_DATA';
+const GET_DATA = 'GET_DATA';
 
 const initialState = {
   data: [],
 };
 
-export const fetchPostsSuccessData = (payload) => ({
-  type: FETCH_SUCCESS_DATA,
+export const getData = (payload) => ({
+  type: GET_DATA,
   payload,
 });
 
-export const fetchPostsRequestMissions = () => async (dispatch) => {
-  const request = await fetch('/');
-  const result = await request.json();
-  console.log(result);
-  dispatch(result);
+export const fetchPostsRequestData = () => async (dispatch) => {
+  const getFetch = fetch('https://api.covid19tracking.narrativa.com/api/2020-03-22')
+    .then((response) => response.json()).then((json) => console.log(json));
+  dispatch(getData(getFetch));
 };
 
 const reducer = (state = initialState, action) => {
   switch (action.type) {
-    case FETCH_SUCCESS_DATA:
+    case GET_DATA:
       return {
         data: action.payload,
       };
