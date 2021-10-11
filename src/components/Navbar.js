@@ -1,33 +1,36 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import '../stylesheet/navbar.css';
-import { IoIosArrowBack } from 'react-icons/io';
 import { BsFillMicFill, BsFillGearFill } from 'react-icons/bs';
 
 const Navbar = () => {
-  // eslint-disable-next-line no-unused-vars
   const links = [
     {
       id: 1,
       path: '/',
-      text: 'Home',
-    },
-    {
-      id: 2,
-      path: '/missions',
-      text: 'Missions',
-    },
-    {
-      id: 3,
-      path: '/profile',
-      text: 'My Profile',
+      text: '<',
     },
   ];
   return (
     <nav className="navBar">
       <div className="left-nav">
-        <IoIosArrowBack />
+        {links.map((link) => (
+          <div
+            className="right-nav-li"
+            key={link.id}
+          >
+            <NavLink
+              to={link.path}
+              className="left-nav-a"
+              activeClassName="active-link"
+              exact
+            >
+              {link.text}
+            </NavLink>
+          </div>
+        ))}
       </div>
-      <div className="middle-nav">Most views</div>
+      <div className="middle-nav">most views</div>
       <ul className="right-nav">
         <BsFillMicFill />
         <BsFillGearFill />
