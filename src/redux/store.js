@@ -6,6 +6,7 @@ import dataReducer from './reducers/dataReducer';
 const reducer = combineReducers({
   dataReducer,
 });
+
 const store = createStore(
   reducer,
   applyMiddleware(logger, thunk),
