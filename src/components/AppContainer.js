@@ -14,7 +14,7 @@ const AppContainer = () => {
   }, []);
 
   const datas = useSelector((state) => state.dataReducer.data);
-  console.log('here is my DATAS', datas);
+  // console.log('here is my DATAS', datas);
 
   return (
     <div>
@@ -23,7 +23,7 @@ const AppContainer = () => {
         <Route exact path="/">
           <Home datas={datas} />
         </Route>
-        <Route path="/details">
+        <Route path="/detail">
           <Details />
         </Route>
         <Route path="*">
@@ -35,3 +35,7 @@ const AppContainer = () => {
 };
 
 export default AppContainer;
+
+// dispatch(fetchPostsRequestTotal());
+// const totals = useSelector((state) => state.dataReducer.total);
+// console.log('here is my TOTALS', totals);
