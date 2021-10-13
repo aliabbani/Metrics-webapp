@@ -1,3 +1,7 @@
+.main-container {
+  margin: 0;
+}
+
 .header {
   background-color: #ff5496;
   margin: 0;
@@ -23,6 +27,7 @@
 .header-h1,
 .header-h4 {
   margin: 0;
+  font-size: 1rem;
 }
 
 .home-title {
@@ -68,6 +73,10 @@
 .inside-down {
   padding-top: 5vh;
   padding-bottom: 2vh;
+}
+
+.inside-h3 {
+  font-size: 1.2rem;
 }
 
 .inside-h3,

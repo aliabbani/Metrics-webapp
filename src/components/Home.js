@@ -9,7 +9,7 @@ const Home = (props) => {
   const { datas } = props;
 
   return (
-    <>
+    <div className="main-container">
       <div className="header">
         <div className="header-left">
           <BiWorld className="header-icon" />
@@ -40,7 +40,7 @@ const Home = (props) => {
           );
         })}
       </div>
-    </>
+    </div>
   );
 };
 

@@ -6,6 +6,7 @@ import NotMatch from '../pages/NotMatch';
 import Home from './Home';
 import Details from './Details';
 import { fetchPostsRequestData } from '../redux/reducers/dataReducer';
+import '../stylesheet/index.css';
 
 const AppContainer = () => {
   const dispatch = useDispatch();
@@ -17,7 +18,7 @@ const AppContainer = () => {
   // console.log('here is my DATAS', datas);
 
   return (
-    <div>
+    <div className="app-container">
       <Navbar />
       <Switch>
         <Route exact path="/">
