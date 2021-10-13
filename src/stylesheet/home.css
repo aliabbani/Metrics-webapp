@@ -1,25 +1,28 @@
 .header {
   background-color: #ff5496;
   margin: 0;
-  padding: 5vh 0;
+  padding: 1vh 0;
   display: flex;
   justify-content: space-between;
+}
+
+.header-icon {
+  font-size: 10rem;
+  color: #f7f7f8de;
+  margin: 0;
 }
 
 .header-right {
   display: flex;
   flex-direction: column;
   padding-right: 4vw;
-  color: #fdfafd;
+  color: #f7f7f8de;
+  padding-top: 5vh;
 }
 
 .header-h1,
 .header-h4 {
   margin: 0;
-}
-
-.header-h4 {
-  align-self: flex-end;
 }
 
 .home-title {
@@ -35,11 +38,31 @@
   grid-template-columns: 1fr 1fr;
 }
 
-.inside-flex {
-  border: 1px solid red;
+.inside-flex,
+.inside-flex-bolder {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: end;
+  padding-right: 2vw;
+  color: #f7f7f8de;
+}
+
+.inside-flex {
+  background-color: #de4783;
+}
+
+.inside-flex-bolder {
+  background-color: #d1447a;
+}
+
+.nav-icon {
+  padding-top: 1vh;
+}
+
+.inside-up {
+  color: #f7f7f8de;
+  font-size: 1.5rem;
 }
 
 .inside-down {
@@ -50,4 +73,9 @@
 .inside-h3,
 .inside-h4 {
   margin: 0;
+}
+
+.confirmed {
+  display: flex;
+  justify-content: flex-end;
 }

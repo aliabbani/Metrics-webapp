@@ -1,4 +1,5 @@
 import { useLocation } from 'react-router-dom';
+import '../stylesheet/details.css';
 
 const Details = () => {
   const location = useLocation();
@@ -21,12 +22,12 @@ const Details = () => {
             </div>
             <h5>CASES STATISTIC BREAKDOWN </h5>
             <div>
-              <div>Today Confirmed</div>
-              <div>
+              <div className="case1">
+                <div>Today Confirmed</div>
                 <div>{data.today_confirmed}</div>
               </div>
-              <div>Today Deaths</div>
-              <div>
+              <div className="case2">
+                <div>Today Deaths</div>
                 <div>{data.today_deaths}</div>
               </div>
               <div>Today Open Cases</div>
