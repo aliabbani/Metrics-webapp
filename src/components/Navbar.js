@@ -30,7 +30,7 @@ const Navbar = () => {
           </div>
         ))}
       </div>
-      <div className="middle-nav">most views</div>
+      <div className="middle-nav">COVID-19 DATA</div>
       <div className="right-nav">
         <BsFillMicFill className="mic" />
         <BsFillGearFill className="gear" />

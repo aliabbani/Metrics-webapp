@@ -1,9 +1,10 @@
 const GET_DATA = 'GET_DATA';
-const UPDATE_DATA = 'UPDATE_DATA';
 const FETCH_ERROR = 'FETCH_ERROR';
+const GET_TOTAL = 'GET_TOTAL';
 
 const initialState = {
   data: [],
+  total: [],
 };
 
 export const getData = (payload) => ({
@@ -11,23 +12,41 @@ export const getData = (payload) => ({
   payload,
 });
 
-export const updateData = (id) => ({
-  type: UPDATE_DATA,
-  id,
+export const getTotal = (payload) => ({
+  type: GET_TOTAL,
+  payload,
 });
 
 export const fetchPostsError = () => ({
   type: FETCH_ERROR,
 });
 
+let date = new Date();
+
+const month = date.getMonth() + 1;
+const day = date.getDate();
+const year = date.getFullYear();
+date = `${year}-${month}-${day}`;
+
 export const fetchPostsRequestData = () => async (dispatch) => {
-  const request = await fetch('https://api.covid19tracking.narrativa.com/api/2020-03-22');
+  const request = await fetch(`https://api.covid19tracking.narrativa.com/api/${date}`);
   const result = await request.json();
-  const datess = '2020-03-22';
+  const datess = date;
   const pays = result.dates[datess].countries;
-  // const total = result.total.today_confirmed;
   const formated = Object.values(pays);
+  // console.log('here is my FORMATED', formated);
   dispatch(getData(formated));
+};
+
+export const fetchPostsRequestTotal = () => async (dispatch) => {
+  const request = await fetch(`https://api.covid19tracking.narrativa.com/api/${date}`);
+  const result = await request.json();
+  const totaly = result.total;
+  // const formatedTotal = Object.values(totaly);
+  const formatedTotal = [];
+  formatedTotal.push(totaly);
+  console.log('here is my FORMATEDTOTAL', formatedTotal);
+  dispatch(getTotal(formatedTotal));
 };
 
 const reducer = (state = initialState, action) => {
@@ -36,11 +55,15 @@ const reducer = (state = initialState, action) => {
       return {
         data: action.payload,
       };
-    // case UPDATE_DATA:
-    //   return state.filter((data) => data.id !== action.id);
+    case GET_TOTAL:
+      return {
+        data: [...state.data],
+        total: action.payload,
+      };
     case FETCH_ERROR:
       return {
         data: [],
+        total: [],
         error: action.payload,
       };
     default:

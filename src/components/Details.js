@@ -4,7 +4,6 @@ import { MdCoronavirus } from 'react-icons/md';
 
 const Details = () => {
   const location = useLocation();
-  console.log('this is LOCATION', location);
   let { data } = location;
   if (!data) {
     data = JSON.parse(localStorage.getItem('data'));

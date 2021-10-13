@@ -6,7 +6,7 @@ import '../stylesheet/home.css';
 import { BiWorld } from 'react-icons/bi';
 
 const Home = (props) => {
-  const { datas } = props;
+  const { datas, totals } = props;
 
   return (
     <div className="main-container">
@@ -16,7 +16,13 @@ const Home = (props) => {
         </div>
         <div className="header-right">
           <h1 className="header-h1">WorldWide</h1>
-          <h4 className="header-h4">341235 cases</h4>
+          {totals.map((total) => (
+            <h4 key={total.date} className="header-h4">
+              {total.today_confirmed}
+              {' '}
+              cases
+            </h4>
+          ))}
         </div>
       </div>
 
@@ -45,26 +51,24 @@ const Home = (props) => {
 };
 
 export default Home;
-// eslint-disable-next-line no-lone-blocks
-// eslint-disable-next-line max-len
-// eslint-disable-next-line no-lone-blocks
-{ /* {datas.length % 2 == 0 ? className = 'container-grid' : className = 'y'} */ }
-
-// const test = `/detail/${data.id}`;
-
-// eslint-disable-next-line no-lone-blocks
-{ /* <div key={data.id} className={datas.indexOf(data) % 2 === 0 ? 'inside-flex' : 'y'}> */ }
 
 // console.log('here is my HOME data', datas);
-
-// const onLink = () => {
-//   console.log('the icon is clickable');
-// };
-
-// function isEven(n) {
-//   return n % 2 === 0;
+// let total = 0;
+// for (let i = 0; i < datas.length; i = +1) {
+//   total += datas[i].today_confirmed;
 // }
+// console.log(total);
+// const array1 = [1, 2, 3, 4];
+// const reducer = (previousValue, currentValue) => previousValue + currentValue;
+// const resul = datas.today_confirmed.reduce(reducer);
 
-// function isOdd(n) {
-//   return Math.abs(n % 2) === 1;
-// }
+// <div className="header-right">
+//   <h1 className="header-h1">WorldWide</h1>
+//   {totals.map((total) => (
+//     <h4 key={total.date} className="header-h4">
+//       {total.today_confirmed}
+//       {' '}
+//       cases
+//     </h4>
+//   ))}
+// </div>;
