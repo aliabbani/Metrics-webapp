@@ -3,11 +3,11 @@
 }
 
 .header {
-  background-color: #ff5496;
-  margin: 0;
-  padding: 1vh 0;
   display: flex;
   justify-content: space-between;
+  background-color: #ff5496;
+  margin: 0;
+  padding: 1vh 4vw 1vh 4vw;
 }
 
 .header-icon {
@@ -18,10 +18,10 @@
 
 .header-right {
   display: flex;
+  gap: 1vh;
   flex-direction: column;
-  padding-right: 4vw;
   color: #f7f7f8de;
-  padding-top: 5vh;
+  padding-top: 9vh;
 }
 
 .header-h1,
@@ -34,7 +34,7 @@
   background-color: #df4783;
   color: #f7f7f8de;
   margin: 0;
-  padding: 1vh 0 1vh 1vw;
+  padding: 2vh 0 2vh 1vw;
 }
 
 .container-grid {
@@ -76,7 +76,7 @@
 }
 
 .inside-h3 {
-  font-size: 1.2rem;
+  /* font-size: 1.2rem; */
   padding-left: 15vw;
 }
 

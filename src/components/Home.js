@@ -6,7 +6,14 @@ import '../stylesheet/home.css';
 import { BiWorld } from 'react-icons/bi';
 
 const Home = (props) => {
-  const { datas, totals } = props;
+  let { totals } = props;
+  const { datas } = props;
+
+  if (!totals) {
+    totals = JSON.parse(localStorage.getItem('totals'));
+  } else {
+    localStorage.setItem('totals', JSON.stringify(totals));
+  }
 
   return (
     <div className="main-container">
@@ -51,24 +58,3 @@ const Home = (props) => {
 };
 
 export default Home;
-
-// console.log('here is my HOME data', datas);
-// let total = 0;
-// for (let i = 0; i < datas.length; i = +1) {
-//   total += datas[i].today_confirmed;
-// }
-// console.log(total);
-// const array1 = [1, 2, 3, 4];
-// const reducer = (previousValue, currentValue) => previousValue + currentValue;
-// const resul = datas.today_confirmed.reduce(reducer);
-
-// <div className="header-right">
-//   <h1 className="header-h1">WorldWide</h1>
-//   {totals.map((total) => (
-//     <h4 key={total.date} className="header-h4">
-//       {total.today_confirmed}
-//       {' '}
-//       cases
-//     </h4>
-//   ))}
-// </div>;

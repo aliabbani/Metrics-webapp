@@ -39,7 +39,3 @@ const AppContainer = () => {
 };
 
 export default AppContainer;
-
-// dispatch(fetchPostsRequestTotal());
-// const totals = useSelector((state) => state.dataReducer.total);
-// console.log('here is my TOTALS', totals);
