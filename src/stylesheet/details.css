@@ -1,7 +1,52 @@
 .case1 {
   background-color: #ea4a89;
+  color: #f7f7f8de;
 }
 
 .case2 {
   background-color: #cf4278;
+  color: #f7f7f8de;
+}
+
+.details-header {
+  background-color: #ff5496;
+  margin: 0;
+  padding: 1vh 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.details-header-icon {
+  font-size: 10rem;
+  color: #f7f7f8de;
+  margin: 0;
+}
+
+.details-header-right {
+  display: flex;
+  flex-direction: column;
+  padding-right: 4vw;
+  color: #f7f7f8de;
+  padding-top: 5vh;
+}
+
+.details-header-h1,
+.details-header-h4 {
+  margin: 0;
+}
+
+.details-home-title {
+  background-color: #df4783;
+  color: #fdfafd;
+  margin: 0;
+  padding: 1vh 0 1vh 1vw;
+}
+
+.case1,
+.case2 {
+  display: flex;
+  justify-content: space-between;
+  padding: 2vh 2vw;
+  font-weight: 600;
+  font-size: 1rem;
 }

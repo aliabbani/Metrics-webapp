@@ -1,5 +1,6 @@
 import { useLocation } from 'react-router-dom';
 import '../stylesheet/details.css';
+import { MdCoronavirus } from 'react-icons/md';
 
 const Details = () => {
   const location = useLocation();
@@ -13,52 +14,114 @@ const Details = () => {
 
   return (
     <>
-      <div>
-        <>
-          <div key={data.id}>
+      <div key={data.id}>
+        <div className="details-header">
+          <div className="details-header-left">
+            <MdCoronavirus className="details-header-icon" />
+          </div>
+          <div className="details-header-right">
+            <h1 className="details-header-h1">{data.name}</h1>
+            <h4 className="details-header-h4">{data.today_confirmed}</h4>
+          </div>
+        </div>
+
+        <h5 className="details-home-title">CASES STATISTIC BREAKDOWN </h5>
+
+        <div>
+          <div className="case1">
+            <div>Today Confirmed</div>
             <div>
-              <h1>{data.name}</h1>
-              <h4>{data.today_confirmed}</h4>
-            </div>
-            <h5>CASES STATISTIC BREAKDOWN </h5>
-            <div>
-              <div className="case1">
-                <div>Today Confirmed</div>
-                <div>{data.today_confirmed}</div>
-              </div>
-              <div className="case2">
-                <div>Today Deaths</div>
-                <div>{data.today_deaths}</div>
-              </div>
-              <div>Today Open Cases</div>
-              <div>
-                <div>{data.today_open_cases}</div>
-              </div>
-              <div>Today recovered</div>
-              <div>
-                <div>{data.today_recovered}</div>
-              </div>
-              <div>Yesterday Confirmed</div>
-              <div>
-                <div>{data.yesterday_confirmed}</div>
-              </div>
-              <div>Yesterday Deaths</div>
-              <div>
-                <div>{data.yesterday_deaths}</div>
-              </div>
-              <div>yesterday Open Cases</div>
-              <div>
-                <div>{data.yesterday_open_cases}</div>
-              </div>
-              <div>Yesterday Recovered</div>
-              <div>
-                <div>{data.yesterday_recovered}</div>
-              </div>
+              {data.today_confirmed}
+              {' '}
+              cases
             </div>
           </div>
-        </>
+          <div className="case2">
+            <div>Today Deaths</div>
+            <div>
+              {data.today_deaths}
+              {' '}
+              cases
+            </div>
+          </div>
+          <div className="case1">
+            <div>Today New Confirmed</div>
+            <div>
+              {data.today_new_confirmed}
+              {' '}
+              cases
+            </div>
+          </div>
+          <div className="case2">
+            <div>Today New Deaths</div>
+            <div>
+              {data.today_new_deaths}
+              {' '}
+              cases
+            </div>
+          </div>
+          <div className="case1">
+            <div>Today New Open Cases</div>
+            <div>
+              {data.today_new_open_cases}
+              {' '}
+              cases
+            </div>
+          </div>
+          <div className="case2">
+            <div>Today New Recovered</div>
+            <div>
+              {data.today_new_recovered}
+              {' '}
+              cases
+            </div>
+          </div>
+          <div className="case1">
+            <div>Today Open Cases</div>
+            <div>
+              {data.today_open_cases}
+              {' '}
+              cases
+            </div>
+          </div>
+          <div className="case2">
+            <div>Today Recovered</div>
+            <div>
+              {data.today_recovered}
+              {' '}
+              cases
+            </div>
+          </div>
+          <div className="case1">
+            <div>Yesterday Confirmed</div>
+            <div>
+              {data.yesterday_confirmed}
+              {' '}
+              cases
+            </div>
+          </div>
+          <div className="case2">
+            <div>Yesterday Deaths</div>
+            <div>
+              {data.yesterday_deaths}
+              {' '}
+              cases
+            </div>
+          </div>
+          <div className="case1">
+            <div>yesterday Open Cases</div>
+            <div>{data.yesterday_open_cases}</div>
+          </div>
+          <div className="case2">
+            <div>Yesterday Recovered</div>
+            <div>
+              {data.yesterday_recovered}
+              {' '}
+              cases
+            </div>
+          </div>
+        </div>
       </div>
-
     </>
   );
 };
