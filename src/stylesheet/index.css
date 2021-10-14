@@ -96,7 +96,7 @@ body * {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: end;
+  align-items: flex-end;
   padding-right: 2vw;
   color: #f7f7f8de;
 }

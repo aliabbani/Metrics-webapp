@@ -73,11 +73,8 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone who’s code was used
-- Inspiration
+Original design idea by Nelson Sakwa on [Behance](https://www.behance.net/gallery/31579789/Ballhead-App-%28Free-PSDs%29).
 
 ## 📝 License
 
 This project is [Microverse](https://www.microverse.org/) licensed.
-
-Original design idea by Nelson Sakwa on [Behance](https://www.behance.net/gallery/31579789/Ballhead-App-%28Free-PSDs%29).
