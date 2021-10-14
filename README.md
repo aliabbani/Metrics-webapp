@@ -1,4 +1,4 @@
-# spaceX-practicing:
+# COVID19 DATA:
 
 <!-- ### Rockets (Homepage)
 ![screenshot](./src/images/Capture.PNG)
@@ -9,7 +9,7 @@
 ### My Profile Page
 ![screenshot](./src/images/Capture2.PNG) -->
 
-This project is a web application for a company that provides commercial and scientific space travel services. The application will allow users to book rockets and join selected space missions. 
+This React capstone project is about building a mobile web application to check a list of metrics (numeric values). The application will allow users to check the statistic of the COVID19 cases for more than 190 countries with a historic data included. 
 
 ## Getting started :
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) and Redux Library.

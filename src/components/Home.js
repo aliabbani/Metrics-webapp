@@ -2,7 +2,7 @@
 import React from 'react';
 import { AiOutlineRightCircle } from 'react-icons/ai';
 import { NavLink } from 'react-router-dom';
-import '../stylesheet/home.css';
+import '../stylesheet/index.css';
 import { BiWorld } from 'react-icons/bi';
 
 const Home = (props) => {

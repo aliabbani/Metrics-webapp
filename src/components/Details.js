@@ -1,5 +1,5 @@
 import { useLocation } from 'react-router-dom';
-import '../stylesheet/details.css';
+import '../stylesheet/index.css';
 import { MdCoronavirus } from 'react-icons/md';
 
 const Details = () => {

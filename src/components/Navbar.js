@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import '../stylesheet/navbar.css';
+import '../stylesheet/index.css';
 import { BsFillMicFill, BsFillGearFill } from 'react-icons/bs';
 import { IoIosArrowBack } from 'react-icons/io';
 
