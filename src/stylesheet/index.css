@@ -88,7 +88,7 @@ body * {
   display: -ms-grid;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  background-color: #f8d6e4;
+  background-color: #d1447a;
 }
 
 .inside-flex,
@@ -101,7 +101,15 @@ body * {
   color: #f7f7f8de;
 }
 
-.inside-flex {
+.inside-flex:nth-child(4n) {
+  background-color: #de4783;
+}
+
+.inside-flex:nth-child(4n - 3) {
+  background-color: #de4783;
+}
+
+.inside-flex:nth-child(8n - 7) {
   background-color: #de4783;
 }
 

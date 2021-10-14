@@ -15,6 +15,9 @@ const Home = (props) => {
     localStorage.setItem('totals', JSON.stringify(totals));
   }
 
+  // eslint-disable-next-line max-len
+  // const boldBox = [0, 3, 4, 7, 8, 11, 12, 15, 16, 19, 20, 23, 24, 27, 28, 31, 32, 35, 36, 39, 40, 43, 44, 47, 48, 51, 52, 55, 56, 59, 60];
+
   return (
     <div className="main-container">
       <div className="header">
@@ -39,7 +42,7 @@ const Home = (props) => {
         {datas.map((data) => {
           const test = `/detail/${data.id}`;
           return (
-            <div key={data.id} className={datas.indexOf(data) % 2 === 0 ? 'inside-flex' : 'inside-flex-bolder'}>
+            <div key={data.id} className="inside-flex">
               <NavLink className="nav-icon" to={{ pathname: test, data }} exact>
                 <AiOutlineRightCircle className="inside-up" />
               </NavLink>
