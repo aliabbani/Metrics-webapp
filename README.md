@@ -49,7 +49,7 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 ## Live Demo
 
-[Live Demo](/)
+[Live Demo](https://pedantic-varahamihira-f8dda8.netlify.app/)
 
 ## Author
 
