@@ -1,5 +1,5 @@
-/* eslint-disable react/prop-types */
 import React from 'react';
+import PropTypes from 'prop-types';
 import { AiOutlineRightCircle } from 'react-icons/ai';
 import { NavLink } from 'react-router-dom';
 import '../stylesheet/index.css';
@@ -55,6 +55,16 @@ const Home = (props) => {
       </div>
     </div>
   );
+};
+
+Home.defaultProps = {
+  datas: [],
+  totals: [],
+};
+
+Home.propTypes = {
+  datas: PropTypes.instanceOf(Array),
+  totals: PropTypes.instanceOf(Array),
 };
 
 export default Home;

@@ -27,7 +27,7 @@ const AppContainer = () => {
         <Route exact path="/">
           <Home datas={datas} totals={totals} />
         </Route>
-        <Route path="/detail">
+        <Route>
           <Details />
         </Route>
         <Route path="*">

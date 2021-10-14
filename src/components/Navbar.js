@@ -14,11 +14,12 @@ const Navbar = () => (
     >
       <IoIosArrowBack />
     </NavLink>
-    <div className="middle-nav">COVID-19 DATA</div>
+    <h4 className="middle-nav">COVID-19 DATA</h4>
     <div className="right-nav">
       <BsFillMicFill className="mic" />
       <BsFillGearFill className="gear" />
     </div>
   </nav>
 );
+
 export default Navbar;
