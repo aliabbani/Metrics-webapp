@@ -25,7 +25,7 @@ const Home = (props) => {
           <h1 className="header-h1">WorldWide</h1>
           {totals.map((total) => (
             <h4 key={total.date} className="header-h4">
-              {total.today_confirmed}
+              {total.today_confirmed.toLocaleString()}
               {' '}
               cases
             </h4>
@@ -46,7 +46,7 @@ const Home = (props) => {
               <div className="inside-down">
                 <h3 className="inside-h3">{data.name}</h3>
                 <div className="confirmed">
-                  <h4 className="inside-h4">{data.today_confirmed}</h4>
+                  <h4 className="inside-h4">{data.today_confirmed.toLocaleString()}</h4>
                 </div>
               </div>
             </div>

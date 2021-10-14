@@ -45,7 +45,6 @@ export const fetchPostsRequestTotal = () => async (dispatch) => {
   // const formatedTotal = Object.values(totaly);
   const formatedTotal = [];
   formatedTotal.push(totaly);
-  console.log('here is my FORMATEDTOTAL', formatedTotal);
   dispatch(getTotal(formatedTotal));
 };
 
@@ -54,6 +53,7 @@ const reducer = (state = initialState, action) => {
     case GET_DATA:
       return {
         data: action.payload,
+        total: [...state.total],
       };
     case GET_TOTAL:
       return {
