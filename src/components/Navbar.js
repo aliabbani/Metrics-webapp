@@ -7,10 +7,10 @@ import { IoIosArrowBack } from 'react-icons/io';
 const Navbar = () => (
   <nav className="navBar">
     <NavLink
-      to={{ pathname: '/' }}
+      to="/"
+      exact
       className="left-nav"
       activeClassName="active-link"
-      exact
     >
       <IoIosArrowBack />
     </NavLink>
