@@ -34,7 +34,6 @@ export const fetchPostsRequestData = () => async (dispatch) => {
   const datess = date;
   const pays = result.dates[datess].countries;
   const formated = Object.values(pays);
-  // console.log('here is my FORMATED', formated);
   dispatch(getData(formated));
 };
 
@@ -42,10 +41,8 @@ export const fetchPostsRequestTotal = () => async (dispatch) => {
   const request = await fetch(`https://api.covid19tracking.narrativa.com/api/${date}`);
   const result = await request.json();
   const totaly = result.total;
-  // const formatedTotal = Object.values(totaly);
   const formatedTotal = [];
   formatedTotal.push(totaly);
-  console.log('here is my FORMATEDTOTAL', formatedTotal);
   dispatch(getTotal(formatedTotal));
 };
 
@@ -54,6 +51,7 @@ const reducer = (state = initialState, action) => {
     case GET_DATA:
       return {
         data: action.payload,
+        total: [...state.total],
       };
     case GET_TOTAL:
       return {
@@ -72,26 +70,3 @@ const reducer = (state = initialState, action) => {
 };
 
 export default reducer;
-
-// const GET_TOTAL = 'GET_TOTAL';
-
-// export const fetchPostsRequestTotal = () => async (dispatch) => {
-//   const request = await fetch('https://api.covid19tracking.narrativa.com/api/2020-03-22');
-//   const resultTotal = await request.json();
-//   const xxx = resultTotal.total;
-//   const formatedTotal = [];
-//   formatedTotal.push(xxx);
-//   console.log('here is my TOTAL Array', formatedTotal);
-//   dispatch(getTotal(formatedTotal));
-// };
-
-// export const getTotal = (payload) => ({
-//   type: GET_TOTAL,
-//   payload,
-// });
-
-// case GET_TOTAL:
-//   return {
-//     data: [...state.data],
-//     total: action.payload,
-//   };

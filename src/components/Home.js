@@ -1,8 +1,8 @@
-/* eslint-disable react/prop-types */
 import React from 'react';
+import PropTypes from 'prop-types';
 import { AiOutlineRightCircle } from 'react-icons/ai';
 import { NavLink } from 'react-router-dom';
-import '../stylesheet/home.css';
+import '../stylesheet/index.css';
 import { BiWorld } from 'react-icons/bi';
 
 const Home = (props) => {
@@ -25,7 +25,7 @@ const Home = (props) => {
           <h1 className="header-h1">WorldWide</h1>
           {totals.map((total) => (
             <h4 key={total.date} className="header-h4">
-              {total.today_confirmed}
+              {total.today_confirmed.toLocaleString()}
               {' '}
               cases
             </h4>
@@ -46,7 +46,7 @@ const Home = (props) => {
               <div className="inside-down">
                 <h3 className="inside-h3">{data.name}</h3>
                 <div className="confirmed">
-                  <h4 className="inside-h4">{data.today_confirmed}</h4>
+                  <h4 className="inside-h4">{data.today_confirmed.toLocaleString()}</h4>
                 </div>
               </div>
             </div>
@@ -55,6 +55,16 @@ const Home = (props) => {
       </div>
     </div>
   );
+};
+
+Home.defaultProps = {
+  datas: [],
+  totals: [],
+};
+
+Home.propTypes = {
+  datas: PropTypes.instanceOf(Array),
+  totals: PropTypes.instanceOf(Array),
 };
 
 export default Home;
