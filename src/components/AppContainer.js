@@ -17,8 +17,6 @@ const AppContainer = () => {
 
   const datas = useSelector((state) => state.dataReducer.data);
   const totals = useSelector((state) => state.dataReducer.total);
-  // console.log('here is my DATAS', datas);
-  // console.log('here is my TOTALS', totals);
 
   return (
     <div className="app-container">

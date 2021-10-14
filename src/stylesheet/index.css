@@ -4,8 +4,6 @@
 
 body {
   background-color: white;
-
-  /* margin: 0; */
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   box-sizing: border-box;
 }
@@ -126,7 +124,6 @@ body * {
 }
 
 .inside-h3 {
-  /* font-size: 1.2rem; */
   padding-left: 15vw;
 }
 
