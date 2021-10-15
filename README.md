@@ -49,6 +49,10 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 ## Live Demo
 
+[Project video Link](https://drive.google.com/file/d/1AS8uwawW_O2ObDgGVv_ed8ZgBfiFme9p/view)
+
+## Video Link
+
 [Live Demo](https://goofy-allen-3d7494.netlify.app)
 
 ## Author
