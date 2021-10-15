@@ -1,6 +1,24 @@
-# Getting Started with Create React App
+# COVID19 DATA:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Homepage
+![screenshot](./src/images/Capture.PNG)
+![screenshot](./src/images/Capture2.PNG)
+
+### details Page
+![screenshot](./src/images/Capture1.PNG)
+![screenshot](./src/images/Capture3.PNG)
+
+
+This React capstone project is about building a mobile web application to check a list of metrics (numeric values). The application will allow users to check the statistic of the COVID19 cases for more than 190 countries with a historic data included. 
+
+## Getting started :
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) and Redux Library.
+
+to get a local copy in your machine :
+
+- clone the repository running `git clone <ur>` in your terminal.
+- run `npm install` on the root folder of the project.
+
 
 ## Available Scripts
 
@@ -29,42 +47,38 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+## Live Demo
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+[Project video Link](https://drive.google.com/file/d/1AS8uwawW_O2ObDgGVv_ed8ZgBfiFme9p/view)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Video Link
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+[Live Demo](https://goofy-allen-3d7494.netlify.app)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Author
 
-## Learn More
+👤 **Ali Abbani**
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Ali's Profile
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- [GitHub](https://github.com/aliabbani)
+- [AngelList](https://angel.co/u/ali-abbani)
+- [LinkedIn](https://www.linkedin.com/in/ali-abbani-8b6246150/)
 
-### Code Splitting
+## 🤝 Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Contributions, issues, and feature requests are welcome!
 
-### Analyzing the Bundle Size
+Feel free to check the [issues page](https://github.com/aliabbani/Metrics-webapp/issues).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Show your support
 
-### Making a Progressive Web App
+Give a ⭐️ if you like this project!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Acknowledgments
 
-### Advanced Configuration
+Original design idea by Nelson Sakwa on [Behance](https://www.behance.net/gallery/31579789/Ballhead-App-%28Free-PSDs%29).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## 📝 License
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is [Microverse](https://www.microverse.org/) licensed.
